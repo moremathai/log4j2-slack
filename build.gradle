@@ -1,9 +1,5 @@
-plugins {
-    id 'ru.vyarus.pom' version '1.2.0'
-    id 'com.jfrog.bintray' version '1.7.3'
-}
-
 apply plugin: 'java'
+apply plugin: 'maven'
 
 group projectGroupId
 version projectVersion
@@ -47,93 +43,4 @@ artifacts {
     archives jar
     archives javadocJar
     archives sourceJar
-}
-
-pom {
-    name 'Log4j2 Slack Appender'
-    description 'This is a highly customizable appender for Apache SLF4J2 to push the logs to Slack using webhooks'
-    url 'https://github.com/rage28/log4j2-slack'
-    licenses {
-        license {
-            name 'Apache License, Version 2.0'
-            url 'https://www.apache.org/licenses/LICENSE-2.0.txt'
-            distribution 'repo'
-        }
-    }
-    scm {
-        url 'https://github.com/rage28/log4j2-slack'
-        connection 'scm:git@github.com:rage28/log4j2-slack.git'
-        developerConnection 'scm:git@github.com:rage28/log4j2-slack.git'
-    }
-    developers {
-        developer {
-            id "rage28"
-            name "Raghavendra Bhuvan"
-            email "rage28@gmail.com"
-            roles {
-                role 'Developer'
-            }
-        }
-    }
-}
-
-publishing {
-    repositories {
-        mavenLocal()
-        jcenter()
-    }
-    publications {
-        jar(MavenPublication) {
-            from components.java
-
-            artifact sourceJar
-            artifact javadocJar
-
-            groupId projectGroupId
-            artifactId rootProject.name
-            version projectVersion
-        }
-    }
-}
-
-bintray {
-    user = "$bintrayUser"
-    key = "$bintrayApikey"
-    publications = ['jar']
-
-    pkg {
-        repo = 'java'
-        name = 'log4j2-slack'
-        desc = 'A highly customizable appender for Apache SLF4J2 to push the logs to Slack using webhooks'
-
-        websiteUrl = 'https://github.com/rage28/log4j2-slack'
-        issueTrackerUrl = 'https://github.com/rage28/log4j2-slack/issues'
-        vcsUrl = 'https://github.com/rage28/log4j2-slack.git'
-
-        licenses = ['Apache-2.0']
-        labels = ['log4j2', 'slack', 'slf4j']
-
-        publicDownloadNumbers = true
-
-        githubRepo = 'rage28/log4j2-slack'
-        githubReleaseNotesFile = 'README.md'
-
-        version {
-            name = "$projectVersion"
-            vcsTag = "$projectVersion"
-            released = new Date()
-
-            gpg {
-                sign = true
-                passphrase = "$bintrayGpgPassword"
-            }
-
-            mavenCentralSync {
-                sync = true
-                user = "$ossrhUserTokenKey"
-                password = "$ossrhUserTokenPassword"
-                close = '1'
-            }
-        }
-    }
 }

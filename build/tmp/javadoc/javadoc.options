@@ -1,0 +1,12 @@
+-classpath '/Users/torkins/dev/log4j2-slack/build/classes/main:/Users/torkins/dev/log4j2-slack/build/resources/main:/Users/torkins/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.8.2/979fc0cf8460302e4ffbfe38c1b66a99450b0bb7/log4j-core-2.8.2.jar:/Users/torkins/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.8.1/4d060ca3190df0eda4dc13415532a12e15ca5f11/okhttp-3.8.1.jar:/Users/torkins/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.1/2a8e0aa38a2e21cb39e2f5a7d6704cbdc941da0/gson-2.8.1.jar:/Users/torkins/.gradle/caches/modules-2/files-2.1/com.github.seratch/jslack/1.0.12/583624738caa83ed4e58cfbbf53ce70cba7eb119/jslack-1.0.12.jar:/Users/torkins/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.8.2/e590eeb783348ce8ddef205b82127f9084d82bf3/log4j-api-2.8.2.jar:/Users/torkins/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar:/Users/torkins/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar'
+-d '/Users/torkins/dev/log4j2-slack/build/docs/javadoc'
+-doctitle 'log4j2-slack 1.0 API'
+-quiet 
+-windowtitle 'log4j2-slack 1.0 API'
+'/Users/torkins/dev/log4j2-slack/src/main/java/com/mmi/log4j2/slack/appender/SlackAppender.java'
+'/Users/torkins/dev/log4j2-slack/src/main/java/com/mmi/log4j2/slack/layout/StringifiedSlackLogLayout.java'
+'/Users/torkins/dev/log4j2-slack/src/main/java/com/mmi/log4j2/slack/layout/SlackLogLayout.java'
+'/Users/torkins/dev/log4j2-slack/src/main/java/com/mmi/log4j2/slack/message/SlackLogMessage.java'
+'/Users/torkins/dev/log4j2-slack/src/main/java/com/mmi/log4j2/slack/message/ISlackLogMessage.java'
+'/Users/torkins/dev/log4j2-slack/src/main/java/com/mmi/log4j2/slack/model/SlackLog.java'
+'/Users/torkins/dev/log4j2-slack/src/main/java/com/mmi/log4j2/slack/model/SlackLogField.java'

@@ -44,8 +44,8 @@ Example
 ```
 
 ```java
-import com.github.rage28.log4j2.slack.message.SlackLogMessage;
-import com.github.rage28.log4j2.slack.model.SlackLog.SlackLogBuilder;
+import SlackLogMessage;
+import SlackLog.SlackLogBuilder;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

@@ -1,0 +1,4 @@
+com.mmi.log4j2.slack.appender
+com.mmi.log4j2.slack.layout
+com.mmi.log4j2.slack.message
+com.mmi.log4j2.slack.model
